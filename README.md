@@ -17,7 +17,6 @@ usage: vpngate [-arh]
 
 ```bash
 $ vpngate 
-/home/u/.vpngate/list.txt
 /home/u/.vpngate/vpngate_9888_109.133.190.243_TCP_Belgium.ovpn
 /home/u/.vpngate/vpngate_12578_180.244.185.77_UDP_Indonesia.ovpn
 /home/u/.vpngate/vpngate_15719_112.207.68.226_UDP_Philippines.ovpn

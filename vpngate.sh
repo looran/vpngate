@@ -32,7 +32,7 @@ if [ ! -e $LIST -o X"$1" = X"-r" ]; then
 fi
 
 if [ X"$1" = X"-a" ]; then
-	find $OUT |sort -n -t'_' -k2
+	find $OUT -name "vpngate_*" |sort -n -t'_' -k2
 else
-	find $OUT |sort -n -t'_' -k2 -r |sort -t'_' -k4,5 -u |sort -n -t'_' -k2
+	find $OUT -name "vpngate_*" |sort -n -t'_' -k2 -r |sort -t'_' -k4,5 -u |sort -n -t'_' -k2
 fi
