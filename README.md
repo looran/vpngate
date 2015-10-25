@@ -6,9 +6,9 @@ vpngate.net .ovpn fetcher
 ### Usage
 
 ```bash
-usage: vpngate [-arh]
+usage: vpngate.sh [-arh]
 -a : show all gates instead of best per country (last is best)
--r : refresh the list.txt file
+-r : refresh from vpngate.net
 
 .ovpn files are stored in ~/.vpngate/vpngate_SCORE_IP_COUNTRY.ovpn
 ```
