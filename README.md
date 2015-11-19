@@ -6,11 +6,25 @@ vpngate.net .ovpn fetcher
 ### Usage
 
 ```bash
-usage: vpngate [-arh]
--a : show all gates instead of best per country/protocol (last is best)
--r : refresh from vpngate.net
+usage: vpngate [-h] <action>
+actions:
+    [list]
+    [list] a[ll]
+    r[efresh]
+    f[av]
+    f[av] <file.ovpn> [<file2.ovpn...]
+    f[av] rm <file.ovpn> [<file2.ovpn...] | all
 
-.ovpn files are stored in ~/.vpngate/vpngate_SCORE_IP_PROTO_COUNTRY.ovpn
+list     : list vpngate .ovpn files
+list all : show all gates instead of best per country/protocol (last is best)
+refresh  : refresh from vpngate.net
+fav      : list favorites
+fav add <file.ovpn> [<file2.ovpn...]      : add one or more files to favorites
+fav rm <file.ovpn> [<file2.ovpn...] | all : remove one or more files from favorites
+
+.ovpn files are named after "vpngate_SCORE_IP_PROTO_COUNTRY.ovpn"
+refreshed files are in /home/u/.vpngate/list/
+favorite  files are in /home/u/.vpngate/fav/
 ```
 
 ### Example
