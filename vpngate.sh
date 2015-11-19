@@ -27,7 +27,7 @@ helpexit() {
 	list all : show all gates instead of best per country/protocol (last is best)
 	refresh  : refresh from vpngate.net
 	fav      : list favorites
-	fav add <file.ovpn> [<file2.ovpn...]      : add one or more files to favorites
+	fav <file.ovpn> [<file2.ovpn...]          : add one or more files to favorites
 	fav rm <file.ovpn> [<file2.ovpn...] | all : remove one or more files from favorites
 
 	.ovpn files are named after "vpngate_SCORE_IP_PROTO_COUNTRY.ovpn"
