@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # vpngate.net .ovpn fetcher
-# 2015, Laurent Ghigonis <laurent@gouloum.fr>
+# 2015, 2017, Laurent Ghigonis <laurent@gouloum.fr>
 
 PROG=$(basename $0)
 OUT=$HOME/.vpngate

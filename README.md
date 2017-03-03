@@ -17,52 +17,56 @@ actions:
 
 list     : list vpngate .ovpn files
 list all : show all gates instead of best per country/protocol (last is best)
-refresh  : refresh from vpngate.net
+refresh  : download from vpngate.net
 fav      : list favorites
 fav <file.ovpn> [<file2.ovpn...]          : add one or more files to favorites
 fav rm <file.ovpn> [<file2.ovpn...] | all : remove one or more files from favorites
 
-.ovpn files are named after "vpngate_SCORE_IP_PROTO_COUNTRY.ovpn"
-refreshed files are in /home/u/.vpngate/list/
+dowloaded files are in /home/u/.vpngate/list/
 favorite  files are in /home/u/.vpngate/fav/
-
 ```
 
 ### Example
 
 ```bash
 $ vpngate
-/home/u/.vpngate/list/vpngate_14000_112.210.115.144_TCP_Philippines.ovpn
-/home/u/.vpngate/list/vpngate_19571_85.154.50.179_TCP_Oman.ovpn
-/home/u/.vpngate/list/vpngate_21945_197.251.135.235_TCP_Ghana.ovpn
-/home/u/.vpngate/list/vpngate_29929_41.237.227.20_UDP_Egypt.ovpn
-/home/u/.vpngate/list/vpngate_36381_109.229.34.88_TCP_Czech Republic.ovpn
-/home/u/.vpngate/list/vpngate_38481_109.156.92.234_TCP_United Kingdom.ovpn
-/home/u/.vpngate/list/vpngate_62382_93.148.63.110_TCP_Italy.ovpn
-/home/u/.vpngate/list/vpngate_63942_178.141.81.244_TCP_Russian Federation.ovpn
-/home/u/.vpngate/list/vpngate_79733_175.136.174.87_TCP_Malaysia.ovpn
-/home/u/.vpngate/list/vpngate_81400_52.17.132.174_TCP_United States.ovpn
-/home/u/.vpngate/list/vpngate_84436_36.74.34.230_UDP_Indonesia.ovpn
-/home/u/.vpngate/list/vpngate_85981_37.187.34.158_TCP_France.ovpn
-/home/u/.vpngate/list/vpngate_111918_106.0.176.61_TCP_Thailand.ovpn
-/home/u/.vpngate/list/vpngate_124837_41.109.219.78_UDP_Algeria.ovpn
-/home/u/.vpngate/list/vpngate_138087_62.38.153.75_UDP_Greece.ovpn
-/home/u/.vpngate/list/vpngate_148136_190.38.202.191_TCP_Venezuela.ovpn
-/home/u/.vpngate/list/vpngate_160639_5.246.101.78_TCP_Saudi Arabia.ovpn
-/home/u/.vpngate/list/vpngate_166451_193.107.85.47_TCP_Iceland.ovpn
-/home/u/.vpngate/list/vpngate_191225_87.222.15.214_UDP_Spain.ovpn
-/home/u/.vpngate/list/vpngate_202119_110.12.132.52_UDP_Korea Republic of.ovpn
-/home/u/.vpngate/list/vpngate_210137_223.205.194.209_UDP_Thailand.ovpn
-/home/u/.vpngate/list/vpngate_212985_50.166.199.133_UDP_United States.ovpn
-/home/u/.vpngate/list/vpngate_231031_42.112.243.176_TCP_Viet Nam.ovpn
-/home/u/.vpngate/list/vpngate_236774_200.19.200.175_TCP_Brazil.ovpn
-/home/u/.vpngate/list/vpngate_264473_93.229.11.150_UDP_Germany.ovpn
-/home/u/.vpngate/list/vpngate_282798_190.213.167.174_TCP_Trinidad and Tobago.ovpn
-/home/u/.vpngate/list/vpngate_291267_1.160.22.63_TCP_Taiwan.ovpn
-/home/u/.vpngate/list/vpngate_301956_37.228.239.252_UDP_Austria.ovpn
-/home/u/.vpngate/list/vpngate_409828_113.160.16.206_UDP_Viet Nam.ovpn
-/home/u/.vpngate/list/vpngate_494359_113.252.156.121_TCP_Hong Kong.ovpn
-/home/u/.vpngate/list/vpngate_512833_39.115.128.147_TCP_Korea Republic of.ovpn
-/home/u/.vpngate/list/vpngate_576621_126.218.178.206_UDP_Japan.ovpn
-/home/u/.vpngate/list/vpngate_603055_121.95.109.128_TCP_Japan.ovpn
+#/home/u/.vpngate/list1       2     3  4     5       6    7     8          9            10
+#/home/u/.vpngate/listvpngate_score_ip_proto_country_ping_speed_totalusers_totaltraffic_uptime
+#
+/home/u/.vpngate/list/vpngate_2530_176.46.69.222_UDP_Estonia_-_0.00_137_3991.95_1906.ovpn
+/home/u/.vpngate/list/vpngate_6820_206.48.228.222_TCP_Cayman Islands_-_0.00_0_0.00_0.ovpn
+/home/u/.vpngate/list/vpngate_7526_148.103.247.116_TCP_Dominican Republic_-_0.00_0_13.64_64754.ovpn
+/home/u/.vpngate/list/vpngate_9101_91.127.187.148_TCP_Reserved_-_0.00_0_0.00_0.ovpn
+/home/u/.vpngate/list/vpngate_13941_5.76.127.237_UDP_Kazakhstan_146_1.79_24_929.53_13461660.ovpn
+/home/u/.vpngate/list/vpngate_18933_94.99.130.69_TCP_Saudi Arabia_-_4.24_736_8371.31_0.ovpn
+/home/u/.vpngate/list/vpngate_24281_201.213.41.140_TCP_Argentina_-_4.38_112_931.06_129.ovpn
+/home/u/.vpngate/list/vpngate_31341_178.59.64.99_TCP_Cyprus_51_0.00_0_14.97_2423768.ovpn
+/home/u/.vpngate/list/vpngate_36970_36.76.240.248_TCP_Indonesia_51_2.54_1542_5645.99_52693155.ovpn
+/home/u/.vpngate/list/vpngate_53443_91.117.215.146_TCP_Spain_47_7.07_8244_86914.05_25219954.ovpn
+/home/u/.vpngate/list/vpngate_53643_88.110.119.203_UDP_United Kingdom_36_6.33_9856_258868.82_584419646.ovpn
+/home/u/.vpngate/list/vpngate_57589_186.94.21.217_UDP_Venezuela_102_1.12_71_344.71_81262085.ovpn
+/home/u/.vpngate/list/vpngate_61489_41.72.118.178_TCP_Zambia_186_0.70_30_370.06_25204458.ovpn
+/home/u/.vpngate/list/vpngate_62348_105.154.63.154_TCP_Morocco_139_0.84_8_29.37_29728588.ovpn
+/home/u/.vpngate/list/vpngate_67784_31.215.37.246_TCP_United Arab Emirates_10_2.71_1_7.65_37634.ovpn
+/home/u/.vpngate/list/vpngate_69078_89.22.254.1_TCP_Ukraine_47_11.91_4117_541835.08_10804537.ovpn
+/home/u/.vpngate/list/vpngate_70069_186.93.154.206_TCP_Venezuela_136_0.74_3687_42036.98_32405584.ovpn
+/home/u/.vpngate/list/vpngate_71970_99.47.249.37_UDP_United States_41_13.40_1610451_18488183.38_7287413758.ovpn
+/home/u/.vpngate/list/vpngate_91647_110.159.253.172_TCP_Malaysia_9_11.18_1727_60191.63_102472924.ovpn
+/home/u/.vpngate/list/vpngate_92233_46.55.254.16_TCP_Bulgaria_1_11.30_2357_101677.65_32404421.ovpn
+/home/u/.vpngate/list/vpngate_93324_110.20.229.144_TCP_Australia_12_9.64_4_63.81_956555535.ovpn
+/home/u/.vpngate/list/vpngate_123353_41.108.104.23_UDP_Algeria_39_0.55_4455_19452.49_28328012.ovpn
+/home/u/.vpngate/list/vpngate_134057_90.157.97.78_TCP_Russian Federation_37_0.00_62_6880.20_3601310.ovpn
+/home/u/.vpngate/list/vpngate_153870_106.104.41.136_TCP_Taiwan_7_32.94_149387_7970012.30_275439988.ovpn
+/home/u/.vpngate/list/vpngate_156645_151.26.230.32_TCP_Italy_35_0.00_34_1128.29_18008373.ovpn
+/home/u/.vpngate/list/vpngate_184307_50.49.103.154_TCP_United States_29_1.33_51845_227495.63_603185370.ovpn
+/home/u/.vpngate/list/vpngate_292500_37.112.63.123_UDP_Russian Federation_10_6.86_11648_4762267.73_126016981.ovpn
+/home/u/.vpngate/list/vpngate_365178_171.233.153.185_TCP_Viet Nam_36_18.81_7507_252950.48_1082785186.ovpn
+/home/u/.vpngate/list/vpngate_366258_125.25.130.112_UDP_Thailand_27_17.11_1176_22530.11_15823712.ovpn
+/home/u/.vpngate/list/vpngate_375310_81.198.38.10_TCP_Latvia_16_11.93_1082_66604.94_535595487.ovpn
+/home/u/.vpngate/list/vpngate_380265_85.202.107.247_TCP_Poland_24_14.75_5751_263885.65_18006507.ovpn
+/home/u/.vpngate/list/vpngate_389632_46.5.0.182_UDP_Germany_18_14.78_109_6459.09_27897455.ovpn
+/home/u/.vpngate/list/vpngate_422815_171.96.102.111_TCP_Thailand_26_20.58_125986_9237883.67_1329562171.ovpn
+/home/u/.vpngate/list/vpngate_429750_210.191.127.192_UDP_Japan_54_28.41_901_551784.77_28925707.ovpn
+/home/u/.vpngate/list/vpngate_516767_211.209.220.96_TCP_Korea Republic of_31_70.81_11741_814147.40_9186472.ovpn
+/home/u/.vpngate/list/vpngate_602051_114.166.57.54_TCP_Japan_12_75.40_59444_3232153.74_36920315.ovpn
 ```
